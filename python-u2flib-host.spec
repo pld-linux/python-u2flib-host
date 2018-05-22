@@ -20,12 +20,18 @@ BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with python2}
 BuildRequires:	python-modules >= 1:2.7
 BuildRequires:	python-setuptools
-%{?with_tests:BuildRequires:	python-cryptography >= 1.0}
+%if %{with tests}
+BuildRequires:	python-cryptography >= 1.0
+BuildRequires:	python-hidapi >= 0.7.99
+%endif
 %endif
 %if %{with python3}
 BuildRequires:	python3-modules >= 1:3.3
 BuildRequires:	python3-setuptools
-%{?with_tests:BuildRequires:	python3-cryptography >= 1.0}
+%if %{with tests}
+BuildRequires:	python3-cryptography >= 1.0
+BuildRequires:	python3-hidapi >= 0.7.99
+%endif
 %endif
 Requires:	python-hidapi >= 0.7.99
 Requires:	python-modules >= 1:2.7
