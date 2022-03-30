@@ -8,7 +8,7 @@ Summary:	Python 2 based U2F host library
 Summary(pl.UTF-8):	Biblioteka hosta U2F dla Pythona 2
 Name:		python-u2flib-host
 Version:	3.0.2
-Release:	5
+Release:	6
 License:	BSD
 Group:		Libraries/Python
 Source0:	https://developers.yubico.com/python-u2flib-host/Releases/%{name}-%{version}.tar.gz
